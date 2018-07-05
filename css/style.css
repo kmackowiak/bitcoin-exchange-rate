@@ -1,0 +1,98 @@
+
+
+body {
+/*========================================================*/
+/*This pattern is downloaded from www.subtlepatterns.com*/
+/*If you need more, that's where to get'em.*/
+/*========================================================*/
+    font-family: 'Roboto', sans-serif;
+    color: #363536;
+    margin: 0;
+    font-size: 16px;
+    background-color: F2F2F2;
+
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #F2B872;
+    border-radius: 0.2rem;
+    padding: 3rem;
+}
+
+.box__title
+{
+    color:#F2911B;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0rem;
+    padding: 3rem 0rem;
+
+}
+
+.money {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.money__value {
+    border: 1px solid #F2B872;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    margin: 0rem 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+
+}
+
+.money__value--btc {
+    background: url("../img/btc.png") no-repeat 1rem;
+    background-position: 90% 50%;
+
+}
+
+.money__value--pln {
+    background: url("../img/pln.png") no-repeat 2rem;
+    background-position: 90% 50%;
+}
+
+
+.money__button {
+    position: relative;
+
+    background-color: #F2911B;
+    color: #F2F2F2;
+    border: 1px solid #F2B872;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin: 2rem;
+    font-weight: 300;
+
+}
+
+.money__button:hover {
+    background-color: #CD791A;
+
+}
+
+
