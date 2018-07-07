@@ -1,21 +1,13 @@
-
-
 body {
-/*========================================================*/
-/*This pattern is downloaded from www.subtlepatterns.com*/
-/*If you need more, that's where to get'em.*/
-/*========================================================*/
     font-family: 'Roboto', sans-serif;
-    color: #363536;
+    color: #4d4d4d;
     margin: 0;
     font-size: 16px;
-    background-color: F2F2F2;
-
+    background-color: #F2F2F2;
 }
 
-
 .container {
-    height: 100vh;
+    height: calc(100vh - 4rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,17 +24,15 @@ body {
     border: 1px solid #F2B872;
     border-radius: 0.2rem;
     padding: 3rem;
+    margin: 1rem;
 }
 
-.box__title
-{
-    color:#F2911B;
+.box__title {
     font-weight: 300;
     font-size: 3rem;
     text-align: center;
     margin: 0rem;
     padding: 3rem 0rem;
-
 }
 
 .money {
@@ -58,16 +48,22 @@ body {
     border-radius: 0.2rem;
     padding: 1rem;
     margin: 0rem 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
+    font-weight: 300;
+}
 
+.money__value:focus {
+    outline-color: #F2911B;
+}
 
+.money__value::placeholder {
+    color: #bcbcbc;
 }
 
 .money__value--btc {
     background: url("../img/btc.png") no-repeat 1rem;
     background-position: 90% 50%;
-
 }
 
 .money__value--pln {
@@ -75,24 +71,70 @@ body {
     background-position: 90% 50%;
 }
 
+.money__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
 
 .money__button {
     position: relative;
-
     background-color: #F2911B;
     color: #F2F2F2;
     border: 1px solid #F2B872;
     border-radius: 0.2rem;
     padding: 0.5rem;
     font-size: 1.2rem;
-    margin: 2rem;
+    margin: 2rem 1rem;
     font-weight: 300;
+    cursor: pointer;
+    width: 6rem;
+}
 
+.money__button:focus {
+    outline-color: #4d4d4d;
 }
 
 .money__button:hover {
     background-color: #CD791A;
-
+    color: #F2F2F2;
 }
 
+.money__button--reverse {
+    background-color: #F2F2F2;
+    border: 1px solid #F2911B;
+    color: #F2911B;
+}
+
+.money__reverse:hover {
+    color: #F2F2F2;
+    background-color: #CD791A;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    background-color: #CD791A;
+    width: 100%;
+    min-height: 4rem;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__info {
+    color: #F2F2F2;
+    font-weight: 300;
+    padding: 0.5rem 1rem;
+    font-size: 0.6rem;
+}
 

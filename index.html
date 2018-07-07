@@ -7,32 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=greek,latin-ext" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-
-
-
 <div class="container">
-
-    <in class="box">
+    <div class="box">
         <h1 class="box__title">Sprawdź ile aktualnie <br> kosztuje Bitcoin</h1>
         <form class="money">
-            <div >
-                <input class="money__value money__value--btc" value="1">
+            <div class="set-btc">
+                <input class="money__value money__value--btc " value="" placeholder="BTC">
                 <span>=</span>
-                <input class="money__value money__value--pln" value="1">
+                <input class="money__value money__value--pln" value="" placeholder="PLN">
             </div>
-            <input type="button" class="money__button" value="Oblicz">
+
+            <div class="set-pln hidden">
+                <input class="money__value money__value--pln" value="" placeholder="PLN">
+                <span>=</span>
+                <input class="money__value money__value--btc " value="" placeholder="BTC">
+            </div>
+
+            <div class="money__buttons">
+                <input type="button" class="money__button money__button--reverse" value="Odwróc">
+                <input type="button" class="money__button money__button--btc" value="Oblicz">
+                <input type="button" class="money__button money__button--pln hidden" value="OblicZ">
+            </div>
         </form>
-
     </div>
-
 </div>
-
-
-
+<div class="footer">
+    <span class="footer__info">BTC/USD: <span class="footer__value"></span></span>
+    <span class="footer__info">USD/PLN: <span class="footer__value"></span></span>
+    <span class="footer__info">Github <span class="footer__value"></span></span>
+</div>
 <script src="js/script.js"></script>
 </body>
+
 </html>
