@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="utf-8">
     <title>Bitcoin's exchange rate</title>
@@ -13,24 +13,24 @@
 <body>
 <div class="container">
     <div class="box">
-        <h1 class="box__title">Sprawdź ile aktualnie <br> kosztuje Bitcoin</h1>
+        <h1 class="box__title">Sprawdź ile aktualnie <br>kosztuje Bitcoin</h1>
         <form class="money">
             <div class="set-btc">
-                <input class="money__value money__value--btc " value="" placeholder="BTC">
-                <span>=</span>
+                <input class="money__value money__value--btc" value="" placeholder="BTC">
+                <span class="money__equal">=</span>
                 <input class="money__value money__value--pln" value="" placeholder="PLN">
             </div>
 
             <div class="set-pln hidden">
                 <input class="money__value money__value--pln" value="" placeholder="PLN">
-                <span>=</span>
-                <input class="money__value money__value--btc " value="" placeholder="BTC">
+                <span class="money__equal">=</span>
+                <input class="money__value money__value--btc" value="" placeholder="BTC">
             </div>
 
             <div class="money__buttons">
-                <input type="button" class="money__button money__button--reverse" value="Odwróc">
+                <input type="button" class="money__button money__button--reverse" value="Odwróć">
                 <input type="button" class="money__button money__button--btc" value="Oblicz">
-                <input type="button" class="money__button money__button--pln hidden" value="OblicZ">
+                <input type="button" class="money__button money__button--pln hidden" value="Oblicz">
             </div>
         </form>
     </div>
@@ -38,7 +38,7 @@
 <div class="footer">
     <span class="footer__info">BTC/USD: <span class="footer__value"></span></span>
     <span class="footer__info">USD/PLN: <span class="footer__value"></span></span>
-    <span class="footer__info">Github <span class="footer__value"></span></span>
+    <a href="https://github.com/kmackowiak/bitcoin-exchange-rate" class="footer__info footer__info--link" target="_blank">Github</a>
 </div>
 <script src="js/script.js"></script>
 </body>

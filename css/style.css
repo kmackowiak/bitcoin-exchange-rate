@@ -71,6 +71,11 @@ body {
     background-position: 90% 50%;
 }
 
+.money__equal {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
 .money__buttons {
     display: flex;
     flex-direction: row;
@@ -136,5 +141,23 @@ body {
     font-weight: 300;
     padding: 0.5rem 1rem;
     font-size: 0.6rem;
+    text-decoration: none;
 }
 
+.footer__info--link:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 661px) {
+    .money__equal {
+        display: block;
+        text-align: center;
+        padding: 0.4rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 462px) {
+    .box__title {
+        font-size: 2rem;
+    }
+}
