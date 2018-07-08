@@ -7,13 +7,19 @@ Application that is a conversion rate of bitcoin to PLN.
 * Pure JavaScript
 * AJAX
 
+### API sources 
+* Bitcoin USD rate:
+https://api.coinpaprika.com/
+* USD to PLN rate: 
+http://api.nbp.pl/
+
 ### Live preview
 https://rawgit.com/kmackowiak/bitcoin-exchange-rate/master/index.html
 
 
 ### Screenshots
 
-![Alt text](images/screenshots/01.png?raw=true)
+![Screenshot of application](img/screenshots/01.png?raw=true)
 
 
 ## Authors
